@@ -2,26 +2,26 @@
 - This project is a real-time C++ application that provides indoor navigation assistance for visually impaired (VI) individuals. The system uses a standard webcam to detect colored QR codes, determines the user's current location, and provides accessible voice-guided directions to a desired destination within a pre-mapped building.
 
 ✨ Core Features
-  👁️ Real-time Color QR Code Detection: A robust computer vision pipeline automatically finds and decodes red, green, or blue QR codes from a live webcam feed, even under varying lighting conditions and at different angles.
-  🧠 Intelligent Route Planning: Uses Dijkstra's algorithm to compute the mathematically shortest path from the user's current location to their destination, based on a pre-defined graph of the building's layout.
-  🔊 Accessible Audio Feedback: Leverages the Windows SAPI Text-to-Speech (TTS) engine to provide clear, turn-by-turn voice instructions. Includes a high-priority speech function to interrupt old messages and deliver critical updates instantly.
-  🎙️ Voice Command Control: Utilizes the Windows SAPI Speech-to-Text (STT) engine to allow users to set their destination hands-free, making the system highly accessible.
+- 👁️ Real-time Color QR Code Detection: A robust computer vision pipeline automatically finds and decodes red, green, or blue QR codes from a live webcam feed, even under varying lighting conditions and at different angles.
+- 🧠 Intelligent Route Planning: Uses Dijkstra's algorithm to compute the mathematically shortest path from the user's current location to their destination, based on a pre-defined graph of the building's layout.
+- 🔊 Accessible Audio Feedback: Leverages the Windows SAPI Text-to-Speech (TTS) engine to provide clear, turn-by-turn voice instructions. Includes a high-priority speech function to interrupt old messages and deliver critical updates instantly.
+- 🎙️ Voice Command Control: Utilizes the Windows SAPI Speech-to-Text (STT) engine to allow users to set their destination hands-free, making the system highly accessible.
 
 💻 Technology Stack
-  Language: C++ (C++17 standard)
-  IDE: Visual Studio 2022
-  Core Library: OpenCV 4.x (for all computer vision tasks)
-  Accessibility: Windows Speech API (SAPI) (for both TTS and STT)
+- Language: C++ (C++17 standard)
+- IDE: Visual Studio 2022
+- Core Library: OpenCV 4.x (for all computer vision tasks)
+- Accessibility: Windows Speech API (SAPI) (for both TTS and STT)
 
 🏗️ System Architecture
-The project is designed with a modular architecture to ensure clean separation of concerns:
-  main.cpp: The central controller that manages the main application loop and coordinates modules.
-  qr_detection.cpp: Handles the computer vision pipeline for finding and isolating QR codes.
-  qr_reader.cpp: Decodes the isolated QR code image into a location string.
-  route_guidance.cpp: Implements the building map as a graph and runs Dijkstra's algorithm.
-  audio_feedback.cpp: Manages all Text-to-Speech (TTS) output.
-  speech_recognition.cpp: Manages all Speech-to-Text (STT) input.
-  ui_vi.cpp: Manages the console-based user menu and input.
+- The project is designed with a modular architecture to ensure clean separation of concerns:
+  - main.cpp: The central controller that manages the main application loop and coordinates modules.
+  - qr_detection.cpp: Handles the computer vision pipeline for finding and isolating QR codes.
+  - qr_reader.cpp: Decodes the isolated QR code image into a location string.
+  - route_guidance.cpp: Implements the building map as a graph and runs Dijkstra's algorithm.
+  - audio_feedback.cpp: Manages all Text-to-Speech (TTS) output.
+  - speech_recognition.cpp: Manages all Speech-to-Text (STT) input.
+  - ui_vi.cpp: Manages the console-based user menu and input.
 
 🤖 Key Algorithms & Vision Pipeline
 The system's reliability stems from its sophisticated computer vision pipeline:
@@ -39,7 +39,7 @@ The system's reliability stems from its sophisticated computer vision pipeline:
   OpenCV's detectAndDecode() is called on this clean binary image for a high success rate.
 
 ⚙️ Getting Started
-To get a local copy up and running, follow these simple steps.
+- To get a local copy up and running, follow these simple steps.
 
 *Prerequisites*
   Visual Studio 2022 with C++ development workload.
@@ -61,7 +61,7 @@ To get a local copy up and running, follow these simple steps.
   Run the application (Debug -> Start Debugging).
 
 🎮 How to Use
-The application is controlled via a simple, voice-guided console menu. Upon launching, you will be presented with the following options:
+- The application is controlled via a simple, voice-guided console menu. Upon launching, you will be presented with the following options:
   1. Start Navigation (Random Destination): Initiates QR code scanning to find your start location and then guides you to a randomly selected destination.
   2. Where am I?: Scans a QR code and simply announces your current location.
   3. Set Destination by Voice: Prompts you to speak a destination (e.g., "N-zero-zero-eight"), then asks you to scan your starting QR code to begin navigation.
@@ -69,15 +69,14 @@ The application is controlled via a simple, voice-guided console menu. Upon laun
   5. Exit: Closes the application.
 
 🚀 Future Improvements
-  Port the system to a mobile platform (Android/iOS) for real-world portability.
-  Implement the A* algorithm as an alternative to Dijkstra's for improved performance on larger maps.
-  Develop a more advanced UI instead of a simple console menu.
-  Integrate real-time obstacle avoidance using depth sensors or additional computer vision techniques.
+- Port the system to a mobile platform (Android/iOS) for real-world portability.
+- Implement the A* algorithm as an alternative to Dijkstra's for improved performance on larger maps.
+- Develop a more advanced UI instead of a simple console menu.
+- Integrate real-time obstacle avoidance using depth sensors or additional computer vision techniques.
 
 📜 License
-Distributed under the MIT License. See LICENSE for more information.
+- Distributed under the MIT License. See LICENSE for more information.
 
 🙏 Acknowledgments
-This project was developed as part of the UCCC2513 Mini Project assignment.
-Universiti Tunku Abdul Rahman (UTAR)
-The OpenCV community
+- This project was developed as part of the UCCC2513 Mini Project assignment.
+- The OpenCV community
