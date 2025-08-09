@@ -1,5 +1,5 @@
 🗺️ Indoor Navigation System for the Visually Impaired 🧑‍🦯
-This project is a real-time C++ application that provides indoor navigation assistance for visually impaired (VI) individuals. The system uses a standard webcam to detect colored QR codes, determines the user's current location, and provides accessible voice-guided directions to a desired destination within a pre-mapped building.
+- This project is a real-time C++ application that provides indoor navigation assistance for visually impaired (VI) individuals. The system uses a standard webcam to detect colored QR codes, determines the user's current location, and provides accessible voice-guided directions to a desired destination within a pre-mapped building.
 
 ✨ Core Features
   👁️ Real-time Color QR Code Detection: A robust computer vision pipeline automatically finds and decodes red, green, or blue QR codes from a live webcam feed, even under varying lighting conditions and at different angles.
