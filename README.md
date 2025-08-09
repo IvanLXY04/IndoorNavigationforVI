@@ -42,9 +42,9 @@ The system's reliability stems from its sophisticated computer vision pipeline:
 - To get a local copy up and running, follow these simple steps.
 
 *Prerequisites*
-  Visual Studio 2022 with C++ development workload.
-  OpenCV 4.x: You must have OpenCV installed and configured correctly on your system.
-  Windows 10/11 SDK: Required for the Speech API (SAPI).
+- Visual Studio 2022 with C++ development workload.
+- OpenCV 4.x: You must have OpenCV installed and configured correctly on your system.
+- Windows 10/11 SDK: Required for the Speech API (SAPI).
 
 *Installation*
 1. Clone the repo:
